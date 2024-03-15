@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ddd, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(120deg, #ddd 30%,  #222 20%, #555); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: changeColor 5s linear infinite;
+}
+
+
+.game {
+    width: 250px;
+    color: white;
+    font-family: system-ui;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    right: 9px;
+    font-size: 30px;
+    width: 224px;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+span {
+    color:gold;
+}
+
+.square {
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    background-color: #111;
+    float: left;
+    font-size: 50px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.square:hover {
+  scale: 1.01;
+  transition: .3s;
+  background: rgba(0,0,0,0.4);
+}
+
+
